@@ -101,9 +101,13 @@ div[class*="sidebar-"] {
     >section[class*="panels-"] {
         border-top: 1px solid var(--dnome-border);
 
-        >div>div[class*="avatarWrapper-"] {
-            &:hover {
-                background-color: var(--dnome-list-item-hover);
+        >div[class*="container-"] {
+            margin: 8px 0;
+
+            >div[class*="avatarWrapper-"] {
+                &:hover {
+                    background-color: var(--dnome-list-item-hover);
+                }
             }
         }
 
