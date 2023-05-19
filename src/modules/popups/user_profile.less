@@ -22,6 +22,7 @@ div[class*="animatorLeft-"] {
                     >button[class*="role-"] {
                         background-color: transparent;
                         border-radius: var(--dnome-border-medium);
+                        transition: @hover-transition;
 
                         &[class*="addButton-"] {
                             border-radius: 100%;
@@ -58,6 +59,7 @@ div[class*="layerContainer-"] {
                             >button {
                                 background-color: var(--dnome-accent);
                                 border-radius: var(--dnome-border-medium);
+                                transition: @hover-transition;
 
                                 &:hover:not([disabled="true"]) {
                                     background-color: var(--dnome-accent-lighter);
@@ -115,6 +117,7 @@ div[class*="layerContainer-"] {
                             div[class*="item-"]:not([class*="labelContainer-"]) {
                                 border-radius: var(--dnome-border-small);
                                 display: flex;
+                                transition: @hover-transition;
 
                                 >div[class*="statusItem-"] {
                                     align-self: center;

@@ -24,6 +24,7 @@ main[class*="container-"] {
                     >div[class*="peopleListItem-"] {
                         border-radius: var(--dnome-border-medium);
                         border: none;
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-list-item-hover);
@@ -36,6 +37,7 @@ main[class*="container-"] {
                             >div[class*="actions-"] {
                                 >div[class*="actionButton-"] {
                                     background-color: transparent;
+                                    transition: @hover-transition;
 
                                     &:hover {
                                         background-color: var(--dnome-popup-hover);
@@ -45,6 +47,7 @@ main[class*="container-"] {
 
                             >div[class*="actionButton-"] {
                                 background-color: transparent;
+                                transition: @hover-transition;
 
                                 &:hover {
                                     background-color: var(--dnome-popup-hover);
@@ -78,6 +81,7 @@ main[class*="container-"] {
 
                 >div[class*="item"] {
                     border-radius: var(--dnome-border-small);
+                    transition: @hover-transition;
 
                     &:hover {
                         background-color: var(--dnome-list-item-hover);
@@ -85,6 +89,7 @@ main[class*="container-"] {
 
                     &[class*="selected-"] {
                         background-color: var(--dnome-list-item-selected);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-list-item-hover-selected);
@@ -95,6 +100,7 @@ main[class*="container-"] {
                     // colored.
                     &[class*="addFriend-"] {
                         background-color: var(--dnome-accent);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-accent-lighter);
@@ -103,6 +109,7 @@ main[class*="container-"] {
                         &[class*="selected-"] {
                             background-color: var(--dnome-list-item-selected);
                             color: unset;
+                            transition: @hover-transition;
 
                             &:hover {
                                 background-color: var(--dnome-list-item-hover-selected);

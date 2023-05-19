@@ -71,6 +71,8 @@ div[class*="chat-"] {
                                     border-radius: var(--dnome-border-medium);
 
                                     >div[class*="button-"] {
+                                        transition: @hover-transition;
+
                                         &:hover {
                                             background-color: var(--dnome-list-item-selected);
                                         }
@@ -105,6 +107,7 @@ div[class*="chat-"] {
         div[class*="clickable-"] {
             >div[class*="base-"] {
                 border-radius: var(--dnome-border-small);
+                transition: @hover-transition;
 
                 &:hover {
                     background-color: var(--dnome-list-item-hover);

@@ -28,6 +28,8 @@
     }
 
     div[class*="diversitySelectorButton-"] {
+        transition: @hover-transition;
+
         &:hover {
             background-color: var(--dnome-list-item-hover);
             padding: 5px;
@@ -39,6 +41,8 @@
 
     div[role="listbox"][data-list-id="diversity"] {
         >div[class*="diversityEmojiItem-"] {
+            transition: @hover-transition;
+
             &:first-child {
                 border-top-left-radius: var(--dnome-border-medium);
                 border-top-right-radius: var(--dnome-border-medium);

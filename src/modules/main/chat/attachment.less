@@ -1,7 +1,7 @@
 // Attachments in chat.
-div[class*="chat-"] {
+div[class*='chat-'] {
     // [GIF] tag.
-    div[class*="gifTag-"] {
+    div[class*='gifTag-'] {
         border-radius: 4px;
     }
 
@@ -13,24 +13,24 @@ div[class*="chat-"] {
     //     }
     // }
 
-    div[id*="message-accessories-"] {
-        // "Open thread" card(?) embed(?). 
-        >div[class*="container-"][role="button"] {
+    div[id*='message-accessories-'] {
+        // "Open thread" card(?) embed(?).
+        > div[class*='container-'][role='button'] {
             border-radius: var(--dnome-border-medium);
             background-color: var(--dnome-base);
             border: 2px solid var(--interactive-muted);
         }
     }
 
-    div[class*="messageAttachment-"] {
-        >div[class*="embedWrapper-"]:not([class*="imageContent-"]) {
+    div[class*='messageAttachment-'] {
+        > div[class*='embedWrapper-']:not([class*='imageContent-']) {
             // Text file.
-            >div[class*="textContainer-"] {
+            > div[class*='textContainer-'] {
                 border-top-left-radius: var(--dnome-border-medium);
                 border-top-right-radius: var(--dnome-border-medium);
             }
 
-            >div[class*="text-"][class*="footer-"] {
+            > div[class*='text-'][class*='footer-'] {
                 border-top: 1px solid var(--dnome-border);
                 border-bottom-left-radius: var(--dnome-border-medium);
                 border-bottom-right-radius: var(--dnome-border-medium);
@@ -40,25 +40,26 @@ div[class*="chat-"] {
             // Stracture had to change
             // since it had padding and
             // border didn't touch sides.
-            &[class*="wrapperAudio-"] {
+            &[class*='wrapperAudio-'] {
                 padding: 10px 0px;
 
-                >div[class*="audioMetadata-"] {
+                > div[class*='audioMetadata-'] {
                     border-bottom: 1px solid var(--dnome-border);
                     padding-left: 10px;
                     padding-right: 10px;
                 }
 
-                >div[class*="audioControls-"] {
+                > div[class*='audioControls-'] {
                     border-radius: var(--dnome-border-medium);
                     background-color: transparent;
 
-                    >* {
+                    > * {
                         &:hover {
                             background-color: var(--dnome-list-item-hover);
                         }
 
                         border-radius: var(--dnome-border-medium);
+                        transition: @hover-transition;
 
                         &:active {
                             background-color: var(--dnome-list-item-selected);

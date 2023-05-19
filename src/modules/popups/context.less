@@ -6,6 +6,7 @@ div[class*="layerContainer-"] {
                 >div[id*="message-quickreact-"][role="menuitem"] {
                     >div[class*="button"] {
                         background-color: transparent;
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-popup-hover);
@@ -58,8 +59,9 @@ div[class*="layerContainer-"] {
 
     div[class*="labelContainer-"][class*="item-"] {
         border-radius: var(--dnome-border-medium);
+        transition: @hover-transition;
 
-        &[role="menuitem"] {
+        &[role="menuitem"]:not([id*="-apps-"]) {
             min-height: 41px;
         }
 

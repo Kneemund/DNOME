@@ -54,6 +54,7 @@ div[class*="standardSidebarView-"] {
                 >div[class*="card-"] {
                     border-radius: var(--dnome-border-medium);
                     background-color: var(--dnome-base);
+                    transition: @hover-transition;
 
                     &:hover {
                         background-color: var(--dnome-list-item-hover);
@@ -70,6 +71,7 @@ div[class*="standardSidebarView-"] {
 
                             >div[role="radio"] {
                                 background-color: var(--dnome-list-item-selected);
+                                transition: @hover-transition;
 
                                 &:hover {
                                     background-color: var(--dnome-list-item-hover-selected);
@@ -113,6 +115,7 @@ div[class*="standardSidebarView-"] {
                     &[class*="itemFilled-"] {
                         background-color: transparent;
                         border-radius: var(--dnome-border-medium);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-list-item-hover);
@@ -137,6 +140,7 @@ div[class*="standardSidebarView-"] {
 
             button[class*="button-"][class*="lookFilled-"] {
                 border-radius: var(--dnome-border-small);
+                transition: @hover-transition;
 
                 >div[class*="upsellButton-"] {
                     color: white;
@@ -161,6 +165,7 @@ div[class*="standardSidebarView-"] {
 
             button[class*="button-"] {
                 border-radius: var(--dnome-border-small);
+                transition: @hover-transition;
 
                 &[class*="lookFilled-"] {
                     &:hover {
@@ -184,6 +189,7 @@ div[class*="standardSidebarView-"] {
 [class*="lookFilled"][class*="color"]:not([class*="colorPrimary"]) {
     background-color: var(--dnome-accent) !important;
     border-radius: var(--dnome-border-medium);
+    transition: @hover-transition;
 
     &:hover {
         background-color: var(--dnome-accent-lighter) !important;

@@ -9,12 +9,14 @@ main[class*="container-"] {
             background-color: var(--dnome-base);
             border: none;
             border-radius: var(--dnome-border-medium);
+            transition: @hover-transition;
 
             &:hover {
                 background-color: var(--dnome-list-item-hover) !important;
 
                 >div>div[class*="body-"]>section {
                     background-color: var(--dnome-list-item-hover);
+                    transition: @hover-transition;
 
                     &:hover {
                         background-color: var(--dnome-list-item-selected);

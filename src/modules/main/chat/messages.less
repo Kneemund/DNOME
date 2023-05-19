@@ -2,10 +2,11 @@
 // (And probably threads).
 
 // Blocked (or highlighted) messages.
-div[class*="groupStart-"] {
+div[class*="groupStart-"], div[class*="backgroundFlash-"] {
     li[class*="messageListItem-"] {
         >div[class*="message-"] {
             background-color: var(--dnome-error-soft);
+            transition: @hover-transition;
 
             &:hover {
                 background-color: var(--dnome-error-soft);
@@ -21,6 +22,8 @@ div[class*="groupStart-"] {
                         box-shadow: none;
 
                         >div[class*="button-"] {
+                            transition: @hover-transition;
+
                             &:hover {
                                 background-color: var(--dnome-list-item-hover);
                             }
@@ -28,6 +31,7 @@ div[class*="groupStart-"] {
 
                         >div[class*="button-"][class*="selected-"] {
                             background-color: var(--dnome-list-item-selected);
+                            transition: @hover-transition;
 
                             &:hover {
                                 background-color: var(--dnome-list-item-hover-selected);
@@ -43,6 +47,8 @@ div[class*="groupStart-"] {
 // Normal messages.
 li[id*="chat-messages-"][class*="messageListItem-"] {
     >div[class*="message-"] {
+        transition: @hover-transition;
+
         &:hover {
             background-color: var(--dnome-base);
             outline: 1px solid var(--dnome-border);
@@ -73,6 +79,8 @@ li[id*="chat-messages-"][class*="messageListItem-"] {
                     box-shadow: none;
 
                     >div[class*="button-"] {
+                        transition: @hover-transition;
+
                         &:hover {
                             background-color: var(--dnome-list-item-hover);
                         }
@@ -80,6 +88,7 @@ li[id*="chat-messages-"][class*="messageListItem-"] {
 
                     >div[class*="button-"][class*="selected-"] {
                         background-color: var(--dnome-list-item-selected);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-list-item-hover-selected);

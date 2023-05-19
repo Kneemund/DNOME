@@ -2,6 +2,7 @@
 // that has all the servers you are in).
 div[data-list-item-id*="guildsnav___"] {
     background-color: var(--dnome-bg);
+    transition: @hover-transition;
 
     &:hover {
         background-color: var(--dnome-list-item-hover);
@@ -47,6 +48,7 @@ div[class*="lowerBadge-"] {
 div[class*="folder-"][data-list-item-id*="guildsnav___"],
 span[class*="expandedFolderBackground"] {
     background-color: var(--dnome-list-item-hover);
+    transition: @hover-transition;
 
     &:hover {
         background-color: var(--dnome-list-item-selected);

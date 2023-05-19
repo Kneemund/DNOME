@@ -50,6 +50,7 @@ div[class*="layerContainer-"] {
                 div[class*="list-"] {
                     li[class*="item-"] {
                         border-radius: var(--dnome-border-medium);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-popup-hover);
@@ -69,6 +70,8 @@ div[class*="layerContainer-"] {
             border-radius: var(--dnome-border-big);
 
             >div[class*="option-"] {
+                transition: @hover-transition;
+
                 &:hover {
                     background-color: var(--dnome-list-item-hover);
                 }
@@ -85,6 +88,8 @@ div[class*="layerContainer-"] {
 
         // dropdown
         >div>div>li[class*="option-"] {
+            transition: @hover-transition;
+
             &[class*="focused-"] {
                 background-color: var(--dnome-list-item-selected);
 
@@ -102,6 +107,7 @@ div[class*="layerContainer-"] {
             >div[class*="item-"]:not([id*="account-divider-"]) {
                 border-radius: var(--dnome-border-small);
                 height: 41px;
+                transition: @hover-transition;
 
                 &:hover,
                 &[class*="focused-"] {
@@ -158,6 +164,7 @@ div[class*="layerContainer-"] {
                     div[role="radiogroup"] {
                         >div[class*="item-"] {
                             border-radius: var(--dnome-border-medium);
+                            transition: @hover-transition;
 
                             &:hover {
                                 background-color: var(--dnome-list-item-hover);
@@ -175,6 +182,7 @@ div[class*="layerContainer-"] {
 
                     div[class*="banReasonOtherClickable-"] {
                         border-radius: var(--dnome-border-medium);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-list-item-hover);
@@ -200,6 +208,7 @@ div[class*="layerContainer-"] {
 
                     >button[type="submit"][class*="colorRed"] {
                         border-radius: var(--dnome-border-small);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-accent-lighter) !important;
@@ -220,6 +229,7 @@ div[class*="layerContainer-"] {
 
                     >button[type="submit"] {
                         border-radius: var(--dnome-border-small);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-accent-lighter) !important;
@@ -229,6 +239,7 @@ div[class*="layerContainer-"] {
                     >button[type="button"][class*="secondaryButton-"] {
                         border-radius: var(--dnome-border-small);
                         background-color: transparent;
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-list-item-hover) !important;
@@ -267,6 +278,7 @@ div[class*="layerContainer-"] {
 
                     >button {
                         border-radius: var(--dnome-border-medium);
+                        transition: @hover-transition;
 
                         &:hover {
                             background-color: var(--dnome-accent-lighter) !important;
